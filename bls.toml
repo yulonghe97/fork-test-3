@@ -1,0 +1,16 @@
+name = "fork-test-3"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "fork-test-3_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "fork-test-3.wasm"
+command = "npm run build:release"
